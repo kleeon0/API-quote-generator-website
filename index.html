@@ -1,0 +1,40 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div>
+        <!--header navigation tab-->
+        <header>
+            <nav>
+                    <a href="index.html" class="cabin">Home</a>
+                    <a href="saved.php" class="cabin">Saved</a>
+            </nav>
+        </header>
+
+        <!--main content-->
+        <article>
+            <span class="center">
+            <h1 id="title" class="cabin">Random Quote Generator</h1>
+            <div>
+                <form action="saveQuote.php" method="post">
+                    <p>
+                        <textarea class="cabin" type="text" name="Quote" id="quote" wrap="hard" readonly required>Click the button below to generate a quote</textarea>
+                        <input type="text" id="author" name="Author" readonly required>
+                    </p>
+                    <button type="button" id="new">New Quote</button>
+                    <button type="submit">Save Quote</button>
+                </form>
+                
+            </div>
+            </span>
+        </article>
+
+    </div>
+
+</body>
+</html>
